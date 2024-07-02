@@ -9,12 +9,36 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <p class="text">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit cumque, quis est culpa aspernatur reiciendis nisi
-      doloribus nostrum cum a quasi corrupti asperiores porro nam recusandae impedit quod aliquid aperiam?<span
-        >HOLA</span
-      >
-    </p>
+    <main class="main">
+      <div class="main-clocks">
+        <div class="digital-clock">
+          <div class="time">
+            <span id="hours" class="hours">11</span>
+            <span class="separator">:</span>
+            <span id="minutes" class="minutes">06</span>
+          </div>
+          <div class="date">
+            <span id="day-of-week">Saturday</span>
+            <span id="day" class="day">14</span>
+            <span id="month" class="month">January</span>
+            <span id="year" class="year">2023</span>
+          </div>
+        </div>
+        <div class="analogic-clock">
+          <div class="outer-clock-face">
+            <div class="marking marking-one"></div>
+            <div class="marking marking-two"></div>
+            <div class="marking marking-three"></div>
+            <div class="marking marking-four"></div>
+            <div class="inner-clock-face">
+              <div id="hour-hand" class="hand hour-hand"></div>
+              <div id="minute-hand" class="hand min-hand"></div>
+              <div id="second-hand" class="hand second-hand"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
