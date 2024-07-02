@@ -15,6 +15,7 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 const rootStyles = document.documentElement.style;
 
 const fixTime = number => (number < 10 ? '0' + number : number);
+
 const getDayOfWeek = today => days[today];
 const getMonth = currentMonth => months[currentMonth];
 
@@ -47,3 +48,5 @@ const setClocks = () => {
 };
 
 setInterval(setClocks, 1000);
+
+setClocks();
